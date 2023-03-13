@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+  
+  :root {
+    --root-1: #07495e;
+  
+    --root-2: #cd97cb;
+  
+    --root-3: #c12b99;
+  
+    --root-4: rgb(239, 210, 230);
+  }
+  
+  .nav-bar {
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    background-color: var(--root-1);
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: solid 0.4px #e83798;
+    color: white;
+  }
+  
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px
+  }
+  
+  .students {
+    display: flex;
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    background-color: #f3adf0; 
+  }
+  
+  .enroll-student {
+    margin-top: 30px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    width: 55%;
+    height: auto;
+  }
+  
+  #enrolled-students {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    justify-content: center;
+    width: 55%;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+  }
+  
+  .enroll-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .gender {
+    padding-left: 15px;
+  }
+  
+  .label {
+    display: flex;
+    font-size: 30px;
+  }
+  
+  .form-control {
+    margin-bottom: 16px;
+  }
+  
+  .seperation-border {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 0px var(--root-1);
+    width: 1.3px;
+    height: 100vh;
+    background: var(--root-1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    hr.seperation-border{
+      height: 0;
+    }
+  }
+  
+  .sectionHeading {
+    display: flex;
+    align-items: center;
+    background-color: var(--root-2);
+    color: #fff;
+    box-sizing: border-box;
+    border: solid 1px var(--root-3);
+  }
+  
+  .sectionHeading > p {
+    padding: 10px 12px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .description {
+    box-sizing: border-box;
+    border-right: solid 1px var(--root-3);
+    margin-bottom: 0;
+    /* border-radius: 5px; */
+    width: 70%;
+  }
+  
+  #span{
+    text-align: center;
+    margin-left: 10.4rem;
+    margin-top: 4rem;
+  }
+  
+  .Image {
+    margin-bottom: 0;
+    width: 30%;
+  }
+  
+  .infoText {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .userName {
+    font-weight: bold;
+  }
+  
+  .wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    justify-content: space-between;
+    border: solid 1px var(--root-3);
+    border-top: none;
+    border-radius: 5px;
+    animation: fadeIn 2s;
+    position: relative;
+  }
+  
+  .userDeleteBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    transform: rotate(45deg);
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    button.userDeleteBtn {
+      display:block;
+    }
+    
+  }
+  
+  .wrapper:hover .userDeleteBtn {
+    display: block;
+  }
+  
+  .wrapper:nth-child(odd) {
+    background-color: #fff;
+  }
+  .wrapper:nth-child(even) {
+    background-color: var(--root-4);
+  }
+  
+  .textInfoContainer {
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: solid 1px var(--root-3);
+    padding: 10px;
+  }
+  
+  .imageContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .userImage {
+    height: auto;
+    width: 105px;
+  }
+  
+  .fadeIn {
+    animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
